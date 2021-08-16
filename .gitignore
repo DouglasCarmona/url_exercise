@@ -131,3 +131,5 @@ dmypy.json
 # Datos del ejercicio
 Ejercicio Python Developer
 error.txt
+urls_titles.csv
+urls_titles.txt
