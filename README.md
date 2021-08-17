@@ -22,4 +22,14 @@ To run this API, the following steps must be followed:
 
 **Request Title Endpoint and Response**
 
-![alt text](img/requests_title_endpoint.png)
+![alt title endopint requests parameters](img/requests_title_endpoint.png)
+
+**Example of title endpoint**
+![alt title endopint response example](img/example_title_response.png)
+
+**Request Keywords Endpoint and Response**
+
+![alt keywords endopint requests parameters](img/requests_keywords_endpoint.png)
+
+**Example of title endpoint**
+![alt keywords endopint response example](img/example_keywords_response.png)
