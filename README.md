@@ -22,4 +22,4 @@ To run this API, the following steps must be followed:
 
 **Request Title Endpoint and Response**
 
-![](img/requests_title_endpoint.png)
+![alt text](img/requests_title_endpoint.png)
