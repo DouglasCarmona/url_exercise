@@ -5,6 +5,11 @@ from services.url import Url
 
 app = FastAPI()
 
+
+@app.get('/')
+def home():
+    return {'msg': 'Welcome to the url title and keywords extractor API'}
+
 @app.get('/api/v1/title', response_model=TitleResponse)
 def url_title(url: str = Query(...)):
     try:
