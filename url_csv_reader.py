@@ -1,5 +1,5 @@
 import os, sys
-from utils import get_title
+from app.utils import get_title
 from typing import IO
 import progressbar
 
@@ -15,7 +15,7 @@ def url_title_from_csv(filepath: str) -> IO:
                     If a error ocurred for an url an error message is returned.
                     This file is save in the same directory where the script is located.  
     """
-    ## Check whether the filepath is valid.
+    # Check whether the filepath is valid.
     if not os.path.isfile(filepath):
         print(f'{filepath} does not exist. Please provide a valid filepath')
         sys.exit()
@@ -37,11 +37,11 @@ def url_title_from_csv(filepath: str) -> IO:
                 bar.update(index)
         bar.finish()
     
-    print(f'\nFinished reading {index} urls from file: {filepath}\n')
+    print(f'\nFinished reading {index} urls from file: {filepath}')
 
     result_filename = './urls_titles.txt'
 
-    print(f'\nBeggining to create file: {result_filename}\n')
+    print(f'\nBeggining to create file: {result_filename}')
 
     try:
         with open(result_filename, mode='w', encoding='utf-8') as nf:
@@ -55,4 +55,4 @@ def url_title_from_csv(filepath: str) -> IO:
 
 
 if __name__ == '__main__':
-    titles = url_title_from_csv('/home/douglas/projects/url_exercise/errorers.txt')
+    titles = url_title_from_csv('/home/douglas/projects/url_exercise/error.txt')
