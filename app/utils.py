@@ -96,8 +96,3 @@ def count_short_tail_keywords(keywords: List[str]) -> int:
         if len(keyword_list) > 1 and len(keyword_list) < 3:
             total += 1
     return total
-
-if __name__ == '__main__':
-    title = get_title('https://www.publimetro.com.mx/mx/entretenimiento/2013/05/30/fotos-belinda-sexy-geisha-mexico-suena.html')
-
-    print(title)

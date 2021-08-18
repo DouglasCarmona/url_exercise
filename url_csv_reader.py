@@ -52,7 +52,3 @@ def url_title_from_csv(filepath: str) -> IO:
             print(f'\nFinished writing {len(results)} records to {result_filename} file')
     except Exception as e:
         print(f'Error ocurred creating file {result_filename}. Reason: {e}')
-
-
-if __name__ == '__main__':
-    titles = url_title_from_csv('/home/douglas/projects/url_exercise/error.txt')
